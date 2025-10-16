@@ -1,61 +1,37 @@
-// Select all form inputs and style them using querySelectorAll and for loop 
-const elements = document.querySelectorAll("input, select, button"); 
-for (let el of elements) {
-  el.style.borderRadius = "6px";
-  el.style.padding = "6px";
-  el.style.border = "1px solid #ccc";
+var rides = ["Tilt-a-Whirl", "Merry-Go-Round", "Bumper Cars", "Ferris Wheel", "Scrambler"];
+
+
+const getBirthday = () => {
+  let dob = document.querySelector("#dob").value;
+  let birthDate = new Date(dob);
+  console.log(birthDate.getFullYear);
+}
+const isRonald = () => {
+  let username = document.querySelector("#name").value.trim();
+  if (username.toLowerCase() ==="ronald") {
+      alert("Thanks Ronald! Your purchase is 15% off!");
+  } else {
+      alert("Thank you for your order. A representative will be in contact."); 
+  }
 }
 
-// Handle form submission
-document.getElementById("rentalForm").addEventListener("submit", function(e) {
-  e.preventDefault(); // Stop form from loading page
+ 
+const styleForm = () => { 
+  let formfields = document.querySelectorAll("input, select");
+  for(let formfield of formfields){
+      formfield.style.border = "3px solid yellow";
 
-  const fullname = document.getElementById("name").value.trim();
-  const dob = document.getElementById("dob").value;
-  const ride = document.getElementById("ride").value;
-  const message = document.getElementById("message");
-});
-
-// CONDITIONALS
-if (fullname === "") {
-  message.textContent = "Please enter your name.";
-  message.style.color = "red";
-  return;
+  }
 }
-
-// Calculate age
-const today = new Date();
-const birthDate = new Date(dob);
-let age = today.getFullYear() - birthDate.getFullYear();
-const monthDiff = today.getMonth() - birthDate.getMonth();
-if (monthDiff <0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) { age--;
-
+const addOptions = () => {
+  for(let ride of rides){
+     const opt = document.createElement("option");
+     opt.value = ride;
+     opt.textContent = ride;
+      document.querySelector("#ride").appendChild(opt);      
+  }
+ 
 }
-
-// Conditional logic for Ronald and age
-if (fullname.toLowerCase() === "ronald") {
-
-  message.style.color = "green";
-
-}
-else if (age < 18) {
-  message.textContent = "You must be at least 18 years old to rent a ride.";
-  message.style.color = "red";
-
-} 
-else if (ride === "") {
-  message.textContent = "Please select a ride.";
-  message.style.color = "orange";
-  
-}
-else {
-  message.textContent = "Thank you! A representative will contact you shortly.";
-  message.style.color = "blue";
-}
-//---WHILE LOOP (Creative use) --- let dots = "";
-let counts = 0; 
-while (counts < age && counts < 3) {
-  dots += ".";
-  console.log("Processing" + dots);
-  counts++;
-}
+document.querySelector("#submit").addEventListener("click", isRonald);
+document.addEventListener("DOMContentLoaded", styleForm);
+document.addEventListener("DOMContentLoaded", addOptions);
