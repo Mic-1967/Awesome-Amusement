@@ -1,29 +1,30 @@
-var rides = ["Tilt-a-Whirl", "Merry-Go-Round", "Bumper Cars", "Ferris Wheel", "Scrambler"];
+// All departments
+var departments = ["Produce", "Bread", "Deli", "Meat", "Seafood", "Dairy", "Drinks", "Frozen"];
 
-const getBirthday = () => {
-  let dob = document.querySelector("#dob").value;
-  let birthDate = new Date(dob);
-}
-const isRonald = () => {
-  let username = document.querySelector("#name").value.trim();
-  if (username.toLowerCase() =="ronald") {
-      alert("Thanks Ronald! Your purchase is 15% off!");
-  } else {
-         alert("Thank you for your order. A representative will be in contact."); 
-  }
-}
+// Department with sales this week
+var onSale = ["Dairy", "Bread", "Meat", "Drinks", "Frozen"];
 
- 
-const styleForm = () => { 
-  let formfields = document.querySelectorAll("input, select");
-  for(let formfield of formfields){
-      formfield.style.border = "3px solid yellow";
+// Main container
+var container = document.getElementById("departments");
+
+// Loop through all departments
+departments.forEach(function(dept) {
+    // Create a new div for each department
+    var section = document.createElement("section");
+    section.id = dept.toLowerCase();
+
+    // Heading (example: "Dairy Weekly Ad")
+    var heading = document.createElement("h2");
+    heading.textContent = dept + " Weekly Ad";
+    section.appendChild(heading);
+
+    // Check if the department is on sale
+    if (!onSale.includes(dept)) {
+      section.classList.add("hidden");
     }
-           
-};
-document.addEventListener("DOMContentLoaded", () => {
-  styleForm();
-  document.querySelector("#submit").addEventListener("click", isRonald);
+
+    //  Add section to main container
+    container.appendChild(section);
+
 });
-
-
+        
