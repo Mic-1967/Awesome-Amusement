@@ -1,0 +1,154 @@
+[
+  {
+    "name": "Honey Glazed Ham",
+    "regular_Price": 14.99,
+    "sale_Price": 10.99,
+    "description": "Sweet and savory honey-glazed ham, perfect for any meal.",
+    "slogan": "A taste of tradition in every bite!",
+    "department": "meat"
+  
+},
+{
+  "name": "Cheddar Cheese Block",
+  "regular_Price": 5.99,
+  "sale_Price": 4.49,
+  "description": "Aged cheddar with a smooth, bold flavor.",
+  "slogan": "Sharp taste that melts in your mouth!",
+  "department": "dairy"
+  
+},
+{
+  "name": "Whole Wheat Bread",
+    "regular_Price": 3.49,
+    "sale_Price": 2.79,
+    "description": "Freshly baked whole wheat bread.",
+    "slogan": "Wholesome goodness in every slice!",
+    "department": "bakery"
+    
+  },
+  {
+    "name": "Sparkling Lemonade",
+    "regular_Price": 2.99,
+    "sale_Price": 1.99,
+    "description": "Refreshing sparkling lemonade, perfect for hot days.",
+    "slogan": "Fizz up your day with a zesty twist!",
+    "department": "Drinks"
+   
+  },
+  {
+    "name": "Mixed Vegetables",
+    "regular_Price": 2.99,
+    "sale_Price": 1.99,
+    "description": "A colorful mix of carrots, corn, peas, and green beans.",
+    "slogan": "Veggies that bring color to your plate!",
+    "department": "frozen"
+    
+  },
+  {
+    "name": "Gouda Cheese Wheel",
+    "regular_Price": 12.99,
+    "sale_Price": 9.99,
+    "description": "Creamy gouda cheese with a hint of smokiness.",
+    "slogan": "Aged to perfection for a bold flavor!",
+    "department": "dairy"
+    
+  },
+  {
+    "name": "Spiral Sliced Ham",
+    "regular_Price": 22.99,
+    "sale_Price": 18.99,
+    "description": "Tender spiral sliced ham, perfect for holiday meals.",
+    "slogan": "Spiral sliced for easy serving!",
+    "department": "meat"
+    
+  },
+  {
+    "name": "Pepper Jack Cheese",
+    "regular_Price": 7.99,
+    "sale_Price": 6.49,
+    "description": "Spicy pepper jack cheese with a kick.",
+    "slogan": "Add some spice to your life!",
+    "department": "dairy"
+  },
+  {
+    "name": "Maple Glazed Ham",
+    "regular_Price": 19.99,
+    "sale_Price": 15.99,
+    "description": "Sweet maple glazed ham, perfect for brunch.",
+    "slogan": "A touch of sweetness for your table!",
+    "department": "meat"
+  },
+  {
+    "name": "Brie Cheese Wheel",
+    "regular_Price": 11.99,
+    "sale_Price": 8.99,
+    "description": "Soft and creamy brie cheese, perfect for cheese boards.",
+    "slogan": "Indulge in the richness of brie!",
+    "department": "dairy"
+  },
+  {
+    "name": "Honey Mustard Ham",
+    "regular_Price": 20.99,
+    "sale_Price": 16.99,
+    "description": "Savory ham with a sweet honey mustard glaze.",
+    "slogan": "A perfect blend of sweet and savory!",
+    "department": "meat"
+  },
+  {
+    "name": "Feta Cheese Crumbles",
+    "regular_Price": 5.49,
+    "sale_Price": 4.49,
+    "description": "Tangy feta cheese crumbles, perfect for salads.",
+    "slogan": "Add a burst of flavor to your dishes!",
+    "department": "dairy"
+  },
+  {
+    "name": "Crown Roast Ham",
+    "regular_Price": 24.99,
+    "sale_Price": 20.99,
+    "description": "Impressive crown roast ham, perfect for special occasions.",
+    "slogan": "Make your celebrations grand with crown roast!",
+    "department": "meat"
+  },
+  {
+    "name": "Cream Cheese Spread",
+    "regular_Price": 4.99,
+    "sale_Price": 3.99,
+    "description": "Smooth cream cheese spread, perfect for bagels.",
+    "slogan": "Spread the love with creamy goodness!",
+    "department": "dairy"
+  },
+  {
+    "name": "Pineapple Glazed Ham",
+    "regular_Price": 21.99,
+    "sale_Price": 17.99,
+    "description": "Sweet pineapple glazed ham, perfect for summer BBQs.",
+    "slogan": "A tropical twist on a classic favorite!",
+    "department": "meat"
+  },
+  {
+    "name": "Ricotta Cheese",
+    "regular_Price": 6.49,
+    "sale_Price": 5.49,
+    "description": "Fresh ricotta cheese, perfect for lasagna.",
+    "slogan": "Creamy and delicious, a pasta lover's dream!",
+    "department": "dairy"
+  },
+  {
+    "name": "Baked Ham",
+    "regular_Price": 19.99,
+    "sale_Price": 15.99,
+    "description": "Classic baked ham, perfect for holiday dinners.",
+    "slogan": "A timeless favorite for every occasion!",
+    "department": "meat"
+  },
+    {
+      "name": "Mascarpone Cheese",
+      "regular_Price": 8.99,
+      "sale_Price": 7.49,
+      "description": "Rich and creamy mascarpone cheese, perfect for desserts.",
+      "slogan": "Indulge in the velvety smoothness of mascarpone!",
+      "department": "dairy"
+    }
+    ]
+  
